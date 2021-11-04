@@ -12,4 +12,4 @@ Crear un nuevo paquete:
 
       instalar paquetes:
       npm install express
-
+      npm install mongoose

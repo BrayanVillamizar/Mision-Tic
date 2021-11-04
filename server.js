@@ -13,7 +13,8 @@ mongoose.connect("mongodb+srv://basedatos:12345@cluster0.0ohwy.mongodb.net/ejegr
 
 //Operaciones CRUD
 
+
 app.use(route);
-app.listen(300, ()=>{
+app.listen(3000, ()=>{
     console.log("Servicio corriendo en el puerto 3000")
 });

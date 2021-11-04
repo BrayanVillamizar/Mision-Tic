@@ -1,0 +1,11 @@
+{
+  "name": "ejercicio1",
+  "version": "1.0.0",
+  "description": "Ejercicion 1 Semana 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brayan Villamizar",
+  "license": "ISC"
+}

@@ -7,3 +7,9 @@ Crear un nuevo paquete:
       Escribir el archivo para el punto de entrada
       entry point:(index.js) senrver.js
 
+      crear un nuevo archivo:
+            touch server.js
+
+      instalar paquetes:
+      npm install express
+

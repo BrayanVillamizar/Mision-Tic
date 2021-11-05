@@ -36,6 +36,18 @@ router.post('/Usuario', (req, res)=>{
     })
     });
 
+//Consultar
+router.get('/Usuario', (req, res) => {
+    UsuarioSchema.find(function(err, datos){
+    if (err){
+        console.log("Error leyendo los Usuarios");
+    }else{
+        res.send(datos);
+       }
+    })
+})
+
+///
 app.use(router);
 app.listen(3000, ()=>{
     console.log("Servicio corriendo en el puerto 3000")

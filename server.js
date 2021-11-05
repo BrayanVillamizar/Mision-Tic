@@ -64,6 +64,21 @@ router.get('/Usuario', (req, res) => {
     })
 })
 
+//Update
+router.put('/Usuario/:id',function(req, res, next){
+    UsuarioSchema.findByIdAndUpdate({_id: req.params.id},req.body).then(function(){
+        UsuarioSchema.findOne({_id: req.params.id}).then(function(UsuarioSchema){
+            res.send(UsuarioSchema);
+        });
+    });
+});
+
+//Borrar
+router.delete('/Usuario/:id',function(req, res, next){
+    UsuarioSchema.findByIdAndDelete({_id: req.params.id}).then(function(UsuarioSchema){
+        res.send(UsuarioSchema);
+    });
+});
 
 ///
 app.use(router);

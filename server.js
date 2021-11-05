@@ -22,11 +22,28 @@ router.get('/', (req, res) => {
 //Insertar
 router.post('/Usuario', (req, res)=>{
     let nuevoUsuario = new UsuarioSchema({
-    
+    /**idUsuario: Number,
+    tpUsuario: String,
+    documentoUsuario: String,
+    nombresUsuario: String,
+    apellidosUsuario: String,
+    direccionUsuario: String,
+    correoUsuario: String,
+    telefonoUsuario: String,
+    celularUsuario: String,
+    webUsuario: String,
+    perfilUsuario: String */
        idUsuario: req.body.id,
-       nombreUsuario: req.body.nombre,
+       tpUsuario: req.body.tp,
+       documentoUsuario: req.body.documento,
+       nombresUsuario: req.body.nombres,
+       apellidosUsuario: req.body.apellidos,
+       direccionUsuario: req.body.direccion,
+       correoUsuario: req.body.correo,
        telefonoUsuario: req.body.telefono,
-       ciudadUsuario: req.body.ciudad
+       celularUsuario: req.body.celular,
+       webUsuario: req.body.web,
+       perfilUsuario: req.body.perfil
     });
     nuevoUsuario.save(function(err, datos){
         if(err){
@@ -46,6 +63,7 @@ router.get('/Usuario', (req, res) => {
        }
     })
 })
+
 
 ///
 app.use(router);

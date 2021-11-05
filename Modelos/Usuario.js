@@ -2,9 +2,16 @@ const mongoose = require ("mongoose");
 
 let UsuarioSchema = new mongoose.Schema({
     idUsuario: Number,
-    nombreUsuario: String,
-    telefonoUsuario: String,
-    ciudadUsuario: String
+    tpUsuario: String,
+    documentoUsuario: Number,
+    nombresUsuario: String,
+    apellidosUsuario: String,
+    direccionUsuario: String,
+    correoUsuario: String,
+    telefonoUsuario: Number,
+    celularUsuario: Number,
+    webUsuario: String,
+    perfilUsuario: String
 
 });
 
